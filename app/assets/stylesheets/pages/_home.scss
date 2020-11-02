@@ -43,7 +43,7 @@ color: black;
     }
 
     h1 {
-        font-size: 3.7rem;
+        font-size: 3rem;
         font-weight: 700;
     }
 }
@@ -61,7 +61,7 @@ color: black;
 .nav__link {
     text-decoration: none;
     color: black;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
@@ -102,7 +102,7 @@ color: black;
     margin: none;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
 
     section {
         min-height: 750px;
@@ -126,6 +126,11 @@ color: black;
 
         a {
             color: white;
+        }
+
+        h1 {
+        font-size: 3.7rem;
+        font-weight: 700;
         }
     }
 
@@ -166,6 +171,7 @@ color: black;
         border: none;
         padding: 0;
         color: white;
+        font-size: 1.75rem;
 
         &:hover {
             color: white;
@@ -248,7 +254,7 @@ color: black;
 
 }
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
 
     .blob-title {
         h1 {
@@ -290,8 +296,8 @@ color: black;
     width: 100vw;
     min-height: 100vh;
     height: auto;
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,7 +311,7 @@ color: black;
 }
 
 .about-info {
-    width: 90%;
+    width: 80%;
     max-width: 800px;
     p{
     line-height: 2.2rem;
@@ -422,7 +428,7 @@ color: black;
 
 }
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
 
     .skills {
 
@@ -457,7 +463,7 @@ color: black;
     }
     
     .about {
-        padding-top: 100px;
+        padding-top: 200px;
         background-color: black;
         color: white;
     }
@@ -506,7 +512,7 @@ color: black;
 border: 5px solid black;
 border-radius: 10px;
 height: 400px;
-width: 400px;
+width: 80%;
 overflow: hidden;
 grid-template-areas: "img"
 "infos";
@@ -570,11 +576,16 @@ transition: opacity .2s ease-in;
 }
 
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
 
     .projects {
-        padding-top: 150px;
+        padding-top: 200px;
         min-height: 100vh;
+    }
+
+    .project-card {
+        height: 400px;
+        width: 400px;   
     }
     
 }
@@ -598,7 +609,7 @@ transition: opacity .2s ease-in;
 
     a {
         transition: text-shadow .5s;
-        text-shadow: 5px 5px white;
+        text-shadow: 5px 5px yellow;
     }
 
     a:hover {
@@ -616,14 +627,28 @@ transition: opacity .2s ease-in;
 
    li a h1{
         font-weight: bold;
-        font-size: 6em;
+        font-size: 4.5em;
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
     .contact {
         background-color: black;
     } 
+
+    .contact-links {
+
+    a {
+        text-shadow: 5px 5px white;
+    }
+
+    li a h1{
+        font-weight: bold;
+        font-size: 6em;
+    }
+
+    }
+
 
 }
 
