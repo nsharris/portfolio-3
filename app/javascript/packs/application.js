@@ -24,11 +24,17 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import smoothscroll from 'smoothscroll-polyfill';
+
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { toggleActiveNav } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  toggleActiveNav();
 });
+smoothscroll.polyfill();
