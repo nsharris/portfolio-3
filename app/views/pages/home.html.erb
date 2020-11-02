@@ -16,18 +16,14 @@
     </nav>
 </header>
 
-<%#<div class="header__bg"></div>%> 
-
 <!-- home-->
 
 <section class="home" id="home">
     <div class="blob">
-        <div class="blob-title"><%= image_tag("/assets/name_extruded_noedges.png", alt: "Hi I'm nathan", width: "1000px") %></div>
+        <div class="blob-title"> <%= cl_image_tag ("mwcnqnipanqvi3bwzfbt.png") %></div>
     </div>
 </section>
 
-<!-- w-to-b-->
-<div class="w-to-b"></div>
 
 <!-- about-->
 
@@ -35,8 +31,8 @@
     <div class="about-info">
         <p>I am a full stack developer based in Amsterdam and a graduate of Le Wagon Web Development Bootcamp. I work with:</p>
         <div class="skills">
-        <div class="skill"><div class="skill__content"><div class="skill-text">Ruby</div><div class="skill-icon" id="ruby"><%= image_tag("/assets/ruby-icon.png", alt: "Ruby", width: "35px") %></div></div></div>
-        <div class="skill"><div class="skill__content"><div class="skill-text">Rails</div><div class="skill-icon" id="ruby"><%= image_tag("/assets/rails-icon.png", alt: "Rails", width: "40px") %></div></div></div>
+        <div class="skill"><div class="skill__content"><div class="skill-text">Ruby</div><div class="skill-icon" id="ruby"><%= cl_image_tag("v1604342946/w7p6sq607xw1cuxem04b", alt: "Ruby", width: "35px") %></div></div></div>
+        <div class="skill"><div class="skill__content"><div class="skill-text">Rails</div><div class="skill-icon" id="ruby"><%= cl_image_tag("wcn3xna5vbzvncsuksxj", alt: "Rails", width: "40px") %></div></div></div>
         <div class="skill"><div class="skill__content"><div class="skill-text">Javascript</div><div class="skill-icon"><i class="fab fa-js"></i></div></div></div>
         <div class="skill"><div class="skill__content"><div class="skill-text">CSS</div><div class="skill-icon"><i class="fab fa-css3-alt"></i></div></div></div>
         <div class="skill"><div class="skill__content"><div class="skill-text">HTML</div><div class="skill-icon"><i class="fab fa-html5"></i></div></div></div>
@@ -57,27 +53,21 @@
             <li>Laser Cutting</li>
             <li>Large Format Printing</li>
             <li>Digital Photography</li>
-            <%#<i class="far fa-star"></i> %>
             </ul>
         </div>
     </div>
 </section>
 
 
-<!-- b-to-w-->
-<div class="b-to-w"></div>
-
  <!-- work-->
 <section class="projects" id="projects">
-
-<%#<h2 class="projects-subtitle">Selected projects:</h2>%>
 
     <div class="projects-grid">
 
         <a href="http://www.lwscout.com" target="_blank">
             <div class="project-card">
                 <div class="project-image"> 
-                    <%= image_tag 'scout-blue.png' %>
+                    <%= cl_image_tag 'ej1k6wk6myzg6haomxud' %>
                 </div>
                 <div class="project-infos">
                     <div class="project-infos__title">
@@ -93,7 +83,7 @@
         <a href="https://boat-rental-app-bbgsch.herokuapp.com/" target="_blank">
             <div class="project-card">
                 <div class="project-image">
-                <%= image_tag 'das-boathaus-logo.png' %>
+                <%= cl_image_tag 'psjaqgitlqdxzznjcj9y' %>
                 </div>
                 <div class="project-infos">
                     <div class="project-infos__title">
@@ -110,9 +100,6 @@
 
 
 </section>
-
-<!-- w-to-b-->
-<div class="w-to-b"></div>
 
 <!-- contact-->
 
