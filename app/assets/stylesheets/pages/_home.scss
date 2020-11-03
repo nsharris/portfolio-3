@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
+    width: 100vw;
     padding-left: 5px;
     z-index: 2;
     padding-right: 10px;
@@ -112,7 +112,7 @@ color: black;
     header {
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 100vw;
         padding-left: 5px;
         padding-right: 10px;
         color: white;
@@ -208,7 +208,6 @@ color: black;
 .home {
     width: 100vw;
     height: 100vh;
-    //padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,7 +246,7 @@ color: black;
     }
 
     img {
-        width: 110%;
+        width: 100%;
         margin: 0 auto;
         opacity: .95;
         transition: transform .7s ease-in-out;
@@ -257,16 +256,33 @@ color: black;
 
 @media (min-width: 600px) {
 
+    .home {
+        padding-top: 100px;
+    }
+
     .blob-title {
         h1 {
             font-size: 10rem;
         }
+
     }
 
     .blob {
         overflow: visible;
     }
     
+}
+
+@media (min-width: 910px) {
+
+    .blob-title {
+
+        img {
+            width: 105%;
+            margin-left: -10px;
+        }
+    }
+
 }
 
 
@@ -324,9 +340,10 @@ color: black;
 }
 
 .skills {
-    width: 80%;
+    width: 100%;
     max-width: 650px;
     margin: 0 auto;
+    text-align: center;
 
 }
 
@@ -436,6 +453,8 @@ color: black;
 @media (min-width: 600px) {
 
     .skills {
+        text-align: left;
+        width: 80%;
 
         .skill-text {
             animation: none;
@@ -501,8 +520,8 @@ color: black;
 
     display: grid;
     width: 95%;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    max-width: 1000px;
+    grid-template-columns: 1fr;
+    max-width: 600px;
     margin: 0 auto;
     grid-gap: 50px;
 
@@ -557,7 +576,7 @@ transition: border 1s ease-in-out, transform 1s ease-in-out, opacity .3s ease, b
 .project-image {
 
     grid-area: image;
-    height: 60%;
+    height: 55%;
     background-color: rgb(72, 72, 84);
     padding-top: 20px;
     display: flex;
@@ -580,6 +599,12 @@ background-image: linear-gradient(rgba(72, 72, 84,1), rgba(72, 72, 84,.4), rgba(
 transition: opacity .2s ease-in;
 }
 
+@media (min-width: 400px) {
+    .project-image {
+        height: 60%;
+    }
+}
+
 
 @media (min-width: 600px) {
 
@@ -588,12 +613,27 @@ transition: opacity .2s ease-in;
         min-height: 100vh;
     }
 
+    
+    
+}
+
+@media (min-width: 900px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+
+    }
+
     .project-card {
         height: 400px;
         width: 400px;   
     }
+
     
 }
+
+
 
 
 //contact
