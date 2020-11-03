@@ -8,7 +8,6 @@ section {
     background-color: white;
     background-size: cover;
     min-height: 800px;
-    border-bottom: 20px dashed black;
 }
 
 
@@ -106,7 +105,6 @@ color: black;
 
     section {
         min-height: 750px;
-        border-bottom: none;
     }
 
     header {
@@ -322,9 +320,8 @@ color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
-    color: black;
-
+    background-color: black;
+    color: white;
 
     p {
         font-size: 1.4rem;
@@ -488,8 +485,6 @@ color: black;
     
     .about {
         padding-top: 200px;
-        background-color: black;
-        color: white;
     }
     
 }
@@ -644,7 +639,7 @@ transition: opacity .2s ease-in;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: black;
 }
 
 .contact-links{
